@@ -1,0 +1,40 @@
+{
+  "name": "orpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc --resolveJsonModule && tsc-alias",
+    "dev": "tsx watch src/index.ts",
+    "inngest": "pnpm dlx inngest-cli@latest dev -u http://localhost:3000/api/inngest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@orpc/contract": "^1.13.5",
+    "@orpc/json-schema": "^1.13.5",
+    "@orpc/openapi": "^1.13.5",
+    "@orpc/server": "^1.13.5",
+    "@orpc/zod": "^1.13.5",
+    "@scalar/express-api-reference": "^0.8.46",
+    "better-auth": "^1.4.19",
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "inngest": "^3.52.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.2",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
