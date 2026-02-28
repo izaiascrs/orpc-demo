@@ -3,6 +3,7 @@ import { Inngest } from "inngest";
 
 export const inngest = new Inngest({
   id: "my-application",
+   eventKey: process.env.INNGEST_EVENT_KEY,
 });
 
 const sleepFunction =  inngest.createFunction(
